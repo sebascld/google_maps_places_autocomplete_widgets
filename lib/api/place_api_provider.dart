@@ -338,6 +338,7 @@ result["result"]
           }
           if (type.contains('administrative_area_level_2')) {
             place.county = component['long_name'];
+            place.countyShort = component['long_name'];
           }
           if (type.contains('administrative_area_level_1')) {
             place.state = component['long_name'];
