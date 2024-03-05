@@ -361,7 +361,11 @@ debugPrint('hideOverlay suggestionHasBeenSelected=$suggestionHasBeenSelected');
         margin: const EdgeInsets.fromLTRB(2, 2, 2, 2),
         padding: const EdgeInsets.all(8),
         alignment: Alignment.centerLeft,
-        color: Colors.white,
+        
+        decoration: const BoxDecoration(
+          color: Color.fromRGBO(238, 238, 238, 1),
+          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20))
+        ),
         child: Text(suggestion.description));
   }
 }
